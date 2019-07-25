@@ -314,23 +314,24 @@ class Defaults {
 		'http',
 		'idx_page',
 		'jetpack_migration',
+		'jp_img_sitemap',
+		'jp_img_sitemap_index',
+		'jp_sitemap',
+		'jp_sitemap_index',
+		'jp_sitemap_master',
+		'jp_vid_sitemap',
+		'jp_vid_sitemap_index',
 		'postman_sent_mail',
 		'rssap-feed',
 		'rssmi_feed_item',
+		'scheduled-action', // Action Scheduler - Job Queue for WordPress https://github.com/woocommerce/woocommerce/tree/e7762627c37ec1f7590e6cac4218ba0c6a20024d/includes/libraries/action-scheduler .
 		'secupress_log_action',
 		'sg_optimizer_jobs',
 		'snitch',
+		'vip-legacy-redirect',
+		'wp_automatic',
 		'wpephpcompat_jobs',
 		'wprss_feed_item',
-		'wp_automatic',
-		'jp_sitemap_master',
-		'jp_sitemap',
-		'jp_sitemap_index',
-		'jp_img_sitemap',
-		'jp_img_sitemap_index',
-		'jp_vid_sitemap',
-		'jp_vid_sitemap_index',
-		'vip-legacy-redirect',
 	);
 
 	/**
@@ -523,6 +524,14 @@ class Defaults {
 		'term_id',
 		'name',
 		'slug',
+	);
+
+	static $default_term_taxonomy_checksum_columns = array(
+		'term_taxonomy_id',
+		'term_id',
+		'taxonomy',
+		'parent',
+		'count',
 	);
 
 	static $default_multisite_callable_whitelist = array(
